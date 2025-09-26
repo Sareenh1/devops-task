@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 // If you don't have tests yet, you can skip this or add a simple test
-                sh 'echo "Tests would run here"'
+                sh 'echo "Tests would run "'
             }
         }
         stage('Build Docker Image') {
@@ -74,3 +74,4 @@ pipeline {
         }
     }
 }
+
