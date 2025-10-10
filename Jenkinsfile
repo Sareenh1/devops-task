@@ -64,7 +64,7 @@ pipeline {
     }
     post {
         always {
-            cleanWs()
+            cleanup()
         }
         success {
             echo 'Pipeline completed successfully!'
@@ -74,5 +74,6 @@ pipeline {
         }
     }
 }
+
 
 
